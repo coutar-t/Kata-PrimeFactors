@@ -19,4 +19,14 @@ public class PrimeFactorsTests: XCTestCase {
 
         XCTAssert(result == [])
     }
+
+    func test_whenGenerateTwo_thenReturnTwo() {
+        // When
+
+        let result = sut.generate(2)
+
+        // Then
+
+        XCTAssert(result == [2])
+    }
 }
