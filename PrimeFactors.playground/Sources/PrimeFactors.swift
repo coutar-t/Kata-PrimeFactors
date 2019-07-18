@@ -5,7 +5,7 @@ public class PrimeFactors {
         var currentValue = value
         var returnedArray: [Int] = []
         if currentValue > 1 {
-            if currentValue % 2 == 0 {
+            while currentValue % 2 == 0 {
                 currentValue = currentValue / 2
                 returnedArray.append(2)
             }
