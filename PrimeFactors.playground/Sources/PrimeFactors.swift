@@ -4,15 +4,16 @@ public class PrimeFactors {
     func generate(_ value: Int) -> [Int] {
         var currentValue = value
         var returnedArray: [Int] = []
-        if currentValue > 1 {
-            while currentValue % 2 == 0 {
-                currentValue = currentValue / 2
-                returnedArray.append(2)
+        var candidate = 2
+
+        while currentValue > 1 {
+            while currentValue % candidate == 0 {
+                currentValue = currentValue / candidate
+                returnedArray.append(candidate)
             }
-            if currentValue > 1 {
-                returnedArray.append(currentValue)
-            }
+            candidate += 1
         }
+
         return returnedArray
     }
 }

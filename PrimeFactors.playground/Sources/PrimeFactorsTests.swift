@@ -80,4 +80,14 @@ public class PrimeFactorsTests: XCTestCase {
         XCTAssert(result == [2, 2, 2])
     }
 
+    func test_whenGenerateNine_thenReturnThreeThree() {
+        // When
+
+        let result = sut.generate(9)
+
+        // Then
+
+        XCTAssert(result == [3, 3])
+    }
+
 }
