@@ -49,4 +49,24 @@ public class PrimeFactorsTests: XCTestCase {
 
         XCTAssert(result == [2, 2])
     }
+
+    func test_whenGenerateFive_thenReturnTwoThree() {
+        // When
+
+        let result = sut.generate(5)
+
+        // Then
+
+        XCTAssert(result == [5])
+    }
+
+    func test_whenGenerateSix_thenReturnTwoThree() {
+        // When
+
+        let result = sut.generate(6)
+
+        // Then
+
+        XCTAssert(result == [2, 3])
+    }
 }
